@@ -1,0 +1,19 @@
+<f:layout name="Default" />
+
+<f:section name="Main">
+<h2>{gallery.title}</h2>
+<p>Klicken Sie auf das Icon in der rechten unteren Ecke des Vorschaubildes, um das Bild in voller Grösse in einem neuen Fenster anzuzeigen. </p>
+<ul class="thumbnails">
+	<f:for each="{gallery}" as="picture">
+		<li>
+			<a title="Galerie anzeigen" class="thumbnail" href="{f:uri.image(src:picture.properties.uid, maxWidth:1024, maxHeight:800)}" rel="lightbox[falGallery]">
+				<f:image src="{picture.properties.uid}" width="123c" height="123"/>
+			</a>
+			<a title="Bild herunterladen..." target="_blank" href="{f:uri.image(src:picture.properties.uid)}" class="download">
+				<img src="{f:uri.resource(path:'Icons/basket_checkout.png')}" />
+			</a>
+		</li>
+	</f:for>
+</ul>
+
+</f:section>

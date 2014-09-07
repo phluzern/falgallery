@@ -1,0 +1,53 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Displays galleries from file collection that base on FAL images or FAL categories.",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "6.2",
+            "version": ""
+        },
+        "extensionKey": "falgallery",
+        "name": "FAL Gallery",
+        "originalExtensionKey": "",
+        "persons": [
+            {
+                "company": "P\u00e4dagogische Hochschule Luzern",
+                "email": "lorenz.ulrich@phlu.ch",
+                "name": "Lorenz Ulrich",
+                "role": "Developer"
+            },
+            {
+                "company": "P\u00e4dagogische Hochschule Luzern",
+                "email": "david.janssen@phlu.ch",
+                "name": "David Janssen",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Gallery => list,show",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "gallery",
+                "name": "Gallery"
+            }
+        ],
+        "vendorName": "PHLU"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2014-09-05 04:09",
+        "extension_builder_version": "6.2.0",
+        "be_user": "Ulrich Lorenz (37)"
+    }
+}

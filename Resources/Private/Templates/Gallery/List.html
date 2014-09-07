@@ -1,0 +1,7 @@
+<ul>
+<f:for each="{galleries}" as="gallery">
+	<li>
+		<f:link.action action="show" arguments="{gallery:gallery.uid}">{gallery.title}</f:link.action>
+	</li>
+</f:for>
+</ul>

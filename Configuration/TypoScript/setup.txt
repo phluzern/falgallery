@@ -1,0 +1,17 @@
+
+plugin.tx_falgallery {
+	view {
+		templateRootPath = {$plugin.tx_falgallery.view.templateRootPath}
+		partialRootPath = {$plugin.tx_falgallery.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_falgallery.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_falgallery.persistence.storagePid}
+	}
+	features {
+		rewrittenPropertyMapper = 1
+	}
+	settings {
+		storagePid = {$plugin.tx_falgallery.persistence.storagePid}
+	}
+}
