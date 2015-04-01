@@ -1,0 +1,10 @@
+{
+  "name": "phluzern/falgallery",
+  "type": "typo3-cms-extension",
+  "description": "Add-on extension for phlu.ch Website",
+  "homepage": "https://github.com/phluzern/falgallery",
+  "license": ["GPL-2.0+"],
+  "require": {
+    "typo3/cms-core": "6.2.*"
+  }
+}
